@@ -31,7 +31,7 @@ nav a {
   color: white;
   display: block;
   text-decoration: none;
-  padding: 10px;
+  padding: 25px;
   text-align: center;
 }
 
@@ -46,7 +46,7 @@ nav a {
 }
 
 .content .heading {
-  font-size: 96px;
+  font-size: 40px;
   text-align: center;
   font-weight: bold;
   padding: 20px;
@@ -85,86 +85,65 @@ hr {
   height: 2em;
 }
 
-.catalogue-container,
-.podcast-details {
+.catalogue-container {
   padding: 20px;
   text-align: center;
   max-width: 800px; /* Adjust as necessary */
   margin: 0 auto;
 }
 
-.podcast-list,
-.episode-list {
+.podcast-list {
   list-style-type: none;
-  padding: 0;
+  padding: 3px;
   font-size: 18px;
 }
 
-.podcast-list li,
-.episode-list li {
+.podcast-list li {
   margin: 10px 0;
 }
 
 .podcast-list a {
   color: #333;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .podcast-list a:hover {
   text-decoration: underline;
 }
 
-.podcast-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.podcast-item img {
+.podcast-list img {
   width: 100px;
   height: 100px;
   margin-right: 15px;
 }
 
-.podcast-item a {
+.podcast-list span {
   font-size: 18px;
-  text-decoration: none;
-  color: #333;
+  font-weight: bold;
 }
 
-.podcast-item a:hover {
-  text-decoration: underline;
+.podcast-details {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .podcast-details .detail-row {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-bottom: 15px;
-}
-
-.podcast-details h2 {
-  font-size: 18px;
-  font-weight: bold;
-  font-style: italic;
-  margin: 0px 10px 10px 0px;
-  min-width: 100px;
+  flex-direction: column;
+  margin: 15px auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
 }
 
 .podcast-details p {
   font-size: 18px;
   font-weight: normal;
-  margin: 0;
-  word-wrap: break-word; /* Forces words to break if necessary */
+  margin: 10px 0;
+  word-wrap: break-word;
   overflow-wrap: break-word;
-}
-
-.podcast-details {
-  text-align: left;
-}
-
-.podcast-details .detail-row p {
-  flex-grow: 1;
-  text-align: left;
-  margin: 0;
+  text-align: justify;
 }

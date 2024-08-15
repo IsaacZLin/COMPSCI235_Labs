@@ -34,6 +34,28 @@ def create_podcasts():
             'categories': 'Society & Culture',
             'website': 'http://www.radiopopolare.it',
             'itunes_id': '568005832'
+        },
+        {
+            'title': 'Tallin Messages',
+            'img_url': 'http://is3.mzstatic.com/image/thumb/Music71/v4/d6/7a/a2/d67aa202-4c97-70d3-e629-b830567cff78/source/600x600bb.jpg',
+            'id': 4,
+            'author': 'Tallin Country Church',
+            'language': 'English',
+            'about': 'Podcast by Tallin Country Church',
+            'categories': 'Religion & Spirituality',
+            'website': 'http://soundcloud.com/tallin-church',
+            'itunes_id': '1165994461'
+        },
+        {
+            'title': 'Bethel Presbyterian Church (EPC) Sermons',
+            'img_url': 'http://is2.mzstatic.com/image/thumb/Music71/v4/0b/a0/ee/0ba0ee27-7137-fc7e-3bd2-4e07531c6b29/source/600x600bb.jpg',
+            'id': 5,
+            'author': 'Eric Toohey',
+            'language': 'English',
+            'about': 'Listen to sermons from Bethel Presbyterian Church (EPC) located just outside of Washington, PA.  For more information about Bethel, please visit our website at bethelepchurch.org.',
+            'categories': 'Religion & Spirituality | Christianity   ',
+            'website': 'http://www.bethelepchurch.org',
+            'itunes_id': '1120152718'
         }
     ]
     return list_of_podcasts
@@ -42,7 +64,7 @@ def create_podcasts():
 home_blueprint = Blueprint('home_bp', __name__)
 
 
-@home_blueprint.route('/', methods=['GE`'])
+@home_blueprint.route('/', methods=['GET'])
 def home():
     list_of_podcasts = create_podcasts()
 

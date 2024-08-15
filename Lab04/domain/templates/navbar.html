@@ -1,14 +1,9 @@
 <nav>
-    <img id="logo" src="../static/logo.png"/>
+  <div>
     <div class="heading">Pod Library</div>
-    <div class="navbar">
-        <ul>
-            <li><a href="{{url_for('home')}}">Home</a></li>
-            <li><a href="{{url_for('podcasts')}}">Podcasts</a></li>
-            <li><a href="#Playlists">My Playlists</a></li>
-        </ul>
-    </div>
-    <div id="nav-footer">
-        CS235 bsan361 | arav428 | xye804 | nkaw981
-    </div>
+    <a href="{{ url_for('home_bp.home') }}">Home</a>
+    <a href="{{ url_for('podcasts') }}">Podcasts</a>
+    <a href="#Playlists">My Playlists</a>
+  </div>
+  <div class="footer">ilin908</div>
 </nav>
